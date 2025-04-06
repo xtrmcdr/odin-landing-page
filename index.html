@@ -69,5 +69,25 @@
         <div class="someone">Unknown person</div>
       </div>
     </div>
+
+    <div class="cta">
+      <div class="cta-left">
+        <p class="cta-title">Call to action! It's time!</p>
+        <p>
+          Sign up for our dev newsletter and get up-to-date on when he will
+          mesmerize you.
+        </p>
+      </div>
+      <button class="invert">Sign up</button>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+      let copy = document.getElementById("footer");
+      let year = new Date().getFullYear();
+
+      copy.innerHTML = `Copyright &copy; ${year} Shafiq Ramli.`;
+    </script>
   </body>
 </html>
