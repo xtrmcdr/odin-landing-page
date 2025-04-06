@@ -11,9 +11,56 @@ html {
   font-size: 24px;
 }
 
-nav {
+.hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 0.9;
+}
+.img-dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  background-color: grey;
+  flex: 1;
+  border-radius: 20px;
+  padding: 20px;
+}
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  filter: opacity(0.8);
+}
+
+.link {
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+.link,
+.hero-subtext {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.hero {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+nav,
+#content {
   background-color: #1f2937;
-  margin: auto;
   display: flex;
   color: #f9faf8;
   justify-content: space-between;
@@ -21,10 +68,101 @@ nav {
   padding: 10px 200px;
 }
 
+#content {
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 nav .links {
   display: flex;
   gap: 10px;
 }
 
-.links .link {
+button {
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #3882f6;
+  border: 0;
+  color: white;
+}
+
+.random-info {
+  padding: 50px 200px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: stretch; */
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  padding: 30px;
+}
+
+.my-traits {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.trait {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.trait-title,
+.someone {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.trait-pic {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 20px;
+  font-size: 4.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.trait-pic:hover {
+  background-color: #3882f6;
+  cursor: default;
+}
+
+.quote {
+  padding: 50px 200px;
+  background-color: #e5e7eb;
+}
+
+.quote > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  /* 
+  
+  align-items: center; */
+}
+
+.saying {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+}
+
+.someone {
+  align-self: flex-end;
 }
